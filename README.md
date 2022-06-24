@@ -142,10 +142,15 @@ Finally, Save Model path and scaler model pickle path
 # Discussion)
 
 The MAPE value achieved is 0.11 which is high in performance.
+
 A simple LSTM, Dense, and Dropout layers is implemented in this model.
+
 The MAPE loss can be further reduced in the future with some suggested approach:
+
     # 1) Increasing number of samples in the dataset
+    
     # 2) Increasing the number of epochs
+    
     # 3) Introduce different model architectures 
 
 #A simple Long Short-Term Memory (LSTM) model is implemented with with an input layer, a single hidden (LSTM) layer, and an output layer 
