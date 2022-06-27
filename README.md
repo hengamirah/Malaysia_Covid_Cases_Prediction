@@ -58,7 +58,7 @@ d. No duplicated data is present in this dataset
 e. Check for outliers using boxplot
 
 ![boxplot](statics/boxplot.png)
-Cases new has shown a peak in values and causing outliers in this dataset, however the data remains during this model creation
+Cases_new has shown a peak in values and causing outliers in this dataset, however the data remains during this model creation
 
 # STEP 3 - Data Cleaning
 
@@ -69,7 +69,7 @@ Cases_new data shows a degree 2 wave graph hence polynomial degree 2 is used to 
 
 # STEP 4 - Features Selection
 
-#Cases new will be the selected data for this model
+cases_new will be the selected features data for this model
 
 # STEP 5 - Data Preprocessing
 
@@ -95,12 +95,15 @@ Show model architecture
 # STEP 7) MODEL ANALYSIS
 
 a. Compile model 
+
 Model is compiled using optimizer 'adam', loss = 'mse', and metrics = 'mape'
 
 b. Callbacks
+
 Tensorboard_callback is used and shown graph using log directory.
 
 c. Fit the model created
+
 Setting epochs = 300 and number nodes = 64, the data is set into fit and training into a new model.
 
 d. Evaluate model loss and mape in graph plot
@@ -153,12 +156,14 @@ The MAPE loss can be further reduced in the future with some suggested approach:
     
     # 3) Introduce different model architectures 
 
-#A simple Long Short-Term Memory (LSTM) model is implemented with with an input layer, a single hidden (LSTM) layer, and an output layer 
-that is used to make a prediction. The input layer has neurons equal to 30 sequence steps (for 30 days COVID-19 data points). 
+#A simple Long Short-Term Memory (LSTM) model is implemented with with an input layer, a single hidden (LSTM) layer, and an output layer that is used to make a prediction. The input layer has neurons equal to 30 sequence steps (for 30 days COVID-19 data points). 
+
 The hidden layer is an LSTM layer with 64 hidden units (neurons) and a rectified linear unit (ReLU) as an activation function. 
-The output layer had a dense layer with 1 unit for predicting the output. Moreover, we have set 300 as the number of epochs, Adam as the optimizer, 
-and the mape as the loss function. After that, we fit the model with prepared data to make a prediction.
-The obtained results may vary given the stochastic nature of the LSTM model; therefore, we have run it several times. 
+The output layer had a dense layer with 1 unit for predicting the output. Moreover, we have set 300 as the number of epochs, Adam as the optimizer, and the mape as the loss function. 
+
+After that, we fit the model with prepared data to make a prediction.
+The obtained results may vary given the stochastic nature of the LSTM model; therefore, we have run it several times.
+
 Finally, we enter the last sequence with output to forecast the next value in the series.
 
 
